@@ -24,7 +24,6 @@ function PlusNode({ id }: any) {
       0
     );
     updateNodeData(id, { output: sum });
-    console.log({ sum });
   }, [id, nodesData, updateNodeData]);
 
   return (

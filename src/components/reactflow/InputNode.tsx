@@ -2,6 +2,7 @@ import { Handle, Position, useReactFlow } from '@xyflow/react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Input } from '../ui/input';
 import { ChangeEvent, useCallback, useState } from 'react';
+import { Label } from '@radix-ui/react-label';
 
 function InputNode({ id, data }: any) {
   const { updateNodeData } = useReactFlow();
@@ -25,7 +26,8 @@ function InputNode({ id, data }: any) {
         <CardTitle>Input Number</CardTitle>
       </CardHeader>
       <CardContent>
-        <Input type="number" onChange={onChange} value={number} />
+        <Label htmlFor={id}>Number</Label>
+        <Input id={id} type="number" onChange={onChange} value={number} />
       </CardContent>
     </Card>
   );
