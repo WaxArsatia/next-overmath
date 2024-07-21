@@ -17,6 +17,7 @@ import OutputNode from '@/components/reactflow/OutputNode';
 import InputNode from '@/components/reactflow/InputNode';
 import PlusNode from '@/components/reactflow/PlusNode';
 import { useCallback } from 'react';
+import { Sidebar } from '@/components/v0/sidebar';
 
 const initialNodes: Node[] = [
   {
@@ -97,6 +98,7 @@ export default function Home() {
         <Background />
         <Controls />
       </ReactFlow>
+      <Sidebar />
     </div>
   );
 }
