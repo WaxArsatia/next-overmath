@@ -34,13 +34,13 @@ import {
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [draggingCard, setDraggingCard] = useState(null);
-  const handleDragStart = (card) => {
+  const handleDragStart = (card: any) => {
     setDraggingCard(card);
   };
-  const handleDragOver = (e) => {
+  const handleDragOver = (e: any) => {
     e.preventDefault();
   };
-  const handleDrop = (e) => {
+  const handleDrop = (e: any) => {
     e.preventDefault();
     setDraggingCard(null);
   };
